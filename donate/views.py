@@ -110,6 +110,9 @@ def instagram(request):
 def terms( request):
     return render (request, 'donate/terms.html')      
 
+def success( request):
+    return render (request, 'donate/success.html')   
+
 def email1( request):
     return render (request, 'donate/email1.html')   
 
